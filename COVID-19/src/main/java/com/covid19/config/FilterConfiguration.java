@@ -17,4 +17,5 @@ public class FilterConfiguration implements WebMvcConfigurer {
 		registrationBean.setUrlPatterns(Arrays.asList("/*"));
 		return registrationBean;
 	}
+
 }

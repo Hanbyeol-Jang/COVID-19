@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="overviewDao">
+
+	<select id="all">
+		SELECT	*
+		FROM	covid_overview
+	</select>
+	
+	<select id="confirmed">
+		SELECT	confirmed
+		FROM	covid_overview
+	</select>
+	
+	<select id="recovered">
+		SELECT	recovered
+		FROM	covid_overview
+	</select>
+	
+	<select id="active">
+		SELECT	active
+		FROM	covid_overview
+	</select>
+	
+	<select id="deaths">
+		SELECT	deaths
+		FROM	covid_overview
+	</select>
+	
+	<select id="date">
+		SELECT	date
+		FROM	covid_overview
+	</select>
+	
+</mapper>
