@@ -2,34 +2,34 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="overviewDao">
+<mapper namespace="com.covid19.dao.OverviewDao">
 
-	<select id="all">
+	<select id="all" resultType="OverviewDto">
 		SELECT	*
 		FROM	covid_overview
 	</select>
 	
-	<select id="confirmed">
+	<select id="confirmed" resultType="OverviewDto">
 		SELECT	confirmed
 		FROM	covid_overview
 	</select>
 	
-	<select id="recovered">
+	<select id="recovered" resultType="OverviewDto">
 		SELECT	recovered
 		FROM	covid_overview
 	</select>
 	
-	<select id="active">
+	<select id="active" resultType="OverviewDto">
 		SELECT	active
 		FROM	covid_overview
 	</select>
 	
-	<select id="deaths">
+	<select id="deaths" resultType="OverviewDto">
 		SELECT	deaths
 		FROM	covid_overview
 	</select>
 	
-	<select id="date">
+	<select id="date" resultType="OverviewDto">
 		SELECT	date
 		FROM	covid_overview
 	</select>

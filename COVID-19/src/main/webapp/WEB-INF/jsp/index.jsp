@@ -15,6 +15,14 @@
 		document.getElementById("confirmedform").action = "/covid19/confirmed";
 		document.getElementById("confirmedform").submit();
 	}
+	
+	function searchAll() {
+		if (document.getElementById("sword").value == "") {
+			alert("모든 목록 조회!!");
+		}
+		document.getElementById("allform").action = "/covid19/all";
+		document.getElementById("allform").submit();
+	}
 </script>
 </head>
 <body>
@@ -25,8 +33,13 @@
 			<input type="text" class="form-control" placeholder="검색어 입력"
 				name="word" id="sword">
 			<button type="button" onclick="javascript:searchConfirmed();">confirmed</button>
-
 		</form>
+		<form id="allform" method="get" action="">
+			<input type="text" class="form-control" placeholder="검색어 입력"
+				name="word" id="sword">
+			<button type="button" onclick="javascript:searchAll();">all</button>
+		</form>
+		
 	</div>
 </body>
 </html>

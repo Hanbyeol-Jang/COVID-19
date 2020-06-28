@@ -14,9 +14,9 @@ public class OverviewServiceImpl implements OverviewService {
 	private OverviewDao overviewDao;
 
 	@Override
-	public OverviewDto getAll(OverviewDto overviewDto) throws SQLException {
+	public OverviewDto all(OverviewDto overviewDto) throws SQLException {
 		System.out.println("=== all ===");
-		return overviewDao.getAll(overviewDto);
+		return overviewDao.all(overviewDto);
 	}
 
 	@Override
@@ -26,27 +26,27 @@ public class OverviewServiceImpl implements OverviewService {
 	}
 
 	@Override
-	public OverviewDto getRecovered(OverviewDto overviewDto) throws SQLException {
+	public OverviewDto recovered(OverviewDto overviewDto) throws SQLException {
 		System.out.println("=== recovered ===");
-		return overviewDao.getRecovered(overviewDto);
+		return overviewDao.recovered(overviewDto);
 	}
 
 	@Override
-	public OverviewDto getActive(OverviewDto overviewDto) throws SQLException {
+	public OverviewDto active(OverviewDto overviewDto) throws SQLException {
 		System.out.println("=== active ===");
-		return overviewDao.getActive(overviewDto);
+		return overviewDao.active(overviewDto);
 	}
 
 	@Override
-	public OverviewDto getDeaths(OverviewDto overviewDto) throws SQLException {
-		System.out.println("=== confirmed ===");
-		return overviewDao.getDeaths(overviewDto);
+	public OverviewDto deaths(OverviewDto overviewDto) throws SQLException {
+		System.out.println("=== deaths ===");
+		return overviewDao.deaths(overviewDto);
 	}
 
 	@Override
-	public OverviewDto getDate(OverviewDto overviewDto) throws SQLException {
+	public OverviewDto date(OverviewDto overviewDto) throws SQLException {
 		System.out.println("=== date ===");
-		return overviewDao.getDate(overviewDto);
+		return overviewDao.date(overviewDto);
 	}
 
 }
