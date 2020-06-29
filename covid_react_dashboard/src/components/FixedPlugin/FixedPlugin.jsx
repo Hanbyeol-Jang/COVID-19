@@ -48,7 +48,7 @@ class FixedPlugin extends Component {
             <i className="fa fa-cog fa-2x" />
           </div>
           <ul className="dropdown-menu">
-            <li className="header-title">Configuration</li>
+            <li className="header-title">Configuration1</li>
             <li className="adjustments-line">
               <p className="pull-left">Background Image</p>
               <div className="pull-right">

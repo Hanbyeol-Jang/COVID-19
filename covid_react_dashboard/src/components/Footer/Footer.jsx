@@ -29,22 +29,17 @@ class Footer extends Component {
                 <a href="#pablo">Home</a>
               </li>
               <li>
-                <a href="#pablo">Company</a>
-              </li>
-              <li>
-                <a href="#pablo">Portfolio</a>
-              </li>
-              <li>
-                <a href="#pablo">Blog</a>
+                <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015">Data Source</a>
               </li>
             </ul>
           </nav>
           <p className="copyright pull-right">
             &copy; {new Date().getFullYear()}{" "}
-            <a href="http://www.creative-tim.com?ref=lbr-footer">
+            <a>
               Creative Tim
             </a>
-            , made with love for a better web
+            , <a href="https://github.com/Hanbyeol-Jang">
+             Stanley Jang </a>
           </p>
         </Grid>
       </footer>

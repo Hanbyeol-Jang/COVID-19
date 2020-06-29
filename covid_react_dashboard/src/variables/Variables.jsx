@@ -493,35 +493,33 @@ const iconsArray = [
 //
 // Data for Pie Chart
 var dataPie = {
-  labels: ["30%", "30%", "40%"],
-  series: [30, 30, 40]
+  labels: ["8%", "15%", "75%"],
+  series: [8, 15, 75]
 };
 var legendPie = {
-  names: ["Open", "Bounce", "Unsubscribe"],
+  names: ["서울", "경북", "대구"],
   types: ["info", "danger", "warning"]
 };
 
 // Data for Line Chart
 var dataSales = {
   labels: [
-    "9:00AM",
-    "12:00AM",
-    "3:00PM",
-    "6:00PM",
-    "9:00PM",
-    "12:00PM",
-    "3:00AM",
-    "6:00AM"
+    "20.05.25",
+    "20.05.30",
+    "20.06.01",
+    "20.06.05",
+    "20.06.10",
+    "20.06.15",
+    "20.06.20",
+    "20.06.25"
   ],
   series: [
-    [287, 385, 490, 492, 554, 586, 698, 695],
-    [67, 152, 143, 240, 287, 335, 435, 437],
-    [23, 113, 67, 108, 190, 239, 307, 308]
+    [11750, 11900, 12100, 12200, 12300, 12400, 12500, 12600]
   ]
 };
 var optionsSales = {
-  low: 0,
-  high: 800,
+  low: 11500,
+  high: 12600,
   showArea: false,
   height: "245px",
   axisX: {
@@ -548,8 +546,8 @@ var responsiveSales = [
   ]
 ];
 var legendSales = {
-  names: ["Open", "Click", "Click Second Time"],
-  types: ["info", "danger", "warning"]
+  names: ["확진자"],
+  types: ["info"]
 };
 
 // Data for Bar Chart
@@ -595,7 +593,7 @@ var responsiveBar = [
 ];
 var legendBar = {
   names: ["Tesla Model S", "BMW 5 Series"],
-  types: ["info", "danger"]
+  types: ["warning", "danger"]
 };
 
 module.exports = {

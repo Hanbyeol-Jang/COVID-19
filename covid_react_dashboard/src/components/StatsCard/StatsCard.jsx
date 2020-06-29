@@ -36,12 +36,12 @@ export class StatsCard extends Component {
               </div>
             </Col>
           </Row>
-          <div className="footer">
+          {/* <div className="footer">
             <hr />
             <div className="stats">
               {this.props.statsIcon} {this.props.statsIconText}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
